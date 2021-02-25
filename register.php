@@ -15,18 +15,26 @@ require_once "inc/config.php"; ?>
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
     <link href="custom.css" rel="stylesheet" type="text/css">
-    <title>login page</title>
+    <title>register page</title>
 </head>
 <body>
 
 <div class="container">
 
 <form class="js-login">
-    <h3 align="center">login form</h3>
+
+    <h3 align="center">register form</h3>
+
     <div class="uk-margin">
         <div class="uk-inline">
             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
             <input class="uk-input  uk-form-width-large" type="email" placeholder="Your Email" required>
+        </div>
+    </div>
+    <div class="uk-margin">
+        <div class="uk-inline">
+            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+            <input class="uk-input  uk-form-width-large" type="text" placeholder="Your Phone Number" required>
         </div>
     </div>
 
@@ -36,8 +44,13 @@ require_once "inc/config.php"; ?>
             <input class="uk-input  uk-form-width-large" type="password" placeholder="Your Password" required>
         </div>
     </div>
-    <button type="submit" class="uk-button uk-button-default uk-width-1-1 uk-button-primary">Submit</button>
-    <button type="button" class="uk-button uk-button-default uk-width-1-1 ">forgot password</button>
+    <div class="uk-margin">
+        <div class="uk-inline">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                <input class="uk-input  uk-form-width-large" type="password" placeholder="repeat your Password" required>
+        </div>
+    </div>
+    <button type="submit" class="uk-button uk-button-default uk-width-1-1 uk-button-primary">Register</button>
 </form>
 
 </div>
