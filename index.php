@@ -1,3 +1,4 @@
+<?php define("__CONFIG__",true); ?>
 <?php include("inc/header.php")?>
 <style>
     .cover{

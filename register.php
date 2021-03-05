@@ -52,7 +52,6 @@ require_once "inc/config.php"; ?>
     </div>
     <button type="submit" class="uk-button uk-button-default uk-width-1-1 uk-button-primary">Register</button>
 </form>
-
 </div>
 
 <!-- jQuery CDN -->
