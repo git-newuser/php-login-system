@@ -4,7 +4,9 @@
 //Allowing the config file
 define("__CONFIG__",true);
 //require config file
-require_once "inc/config.php"; ?>
+require_once "inc/config.php"; 
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,20 +23,25 @@ require_once "inc/config.php"; ?>
 
 <div class="container">
 
-<form class="js-login">
+
+<form class="js-login" action="testLogin.php">
     <h3 align="center">login form</h3>
     <div class="uk-margin">
         <div class="uk-inline">
             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
-            <input class="uk-input  uk-form-width-large" type="email" placeholder="Your Email" required>
+            <input class="uk-input  uk-form-width-large" type="email" placeholder="Your Email">
         </div>
+        <div class="uk-margin uk-alert uk-alert-danger js-email-error" style="display:none;"> test </div>
+
     </div>
 
     <div class="uk-margin">
         <div class="uk-inline">
             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-            <input class="uk-input  uk-form-width-large" type="password" placeholder="Your Password" required>
+            <input class="uk-input  uk-form-width-large" type="password" placeholder="Your Password">
         </div>
+        <div class="uk-margin uk-alert uk-alert-danger js-pw-error" style="display:none;"> test </div>
+
     </div>
     <button type="submit" class="uk-button uk-button-default uk-width-1-1 uk-button-primary">Submit</button>
     <button type="button" class="uk-button uk-button-default uk-width-1-1 ">forgot password</button>
@@ -42,10 +49,9 @@ require_once "inc/config.php"; ?>
 
 </div>
 
-<!-- jQuery CDN -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<!-- UIkit JS CDN -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>   
+<?php
+    include "inc/footer.php";
+?>
+
 </body>
 </html>
